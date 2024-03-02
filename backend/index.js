@@ -1,5 +1,5 @@
 import express from 'express';
-import { PORT, mongoDBURL } from './config.js';
+import { mongoDBURL } from './config.js';
 import mongoose from 'mongoose';
 import booksRoute from './routes/booksRoute.js';
 import cors from 'cors';
@@ -14,10 +14,7 @@ app.use(express.json());
 app.use(cors({
       origin:["https://mern-app-frontend-xi.vercel.app"],
       methods:["POST","GET","DELETE","UPDATE"],
-      credentials: true,
-
-
-
+      credentials: true
 }
   
 ));
