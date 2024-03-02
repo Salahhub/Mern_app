@@ -12,7 +12,7 @@ app.use(express.json());
 // Middleware for handling CORS POLICY
 // Option 1: Allow All Origins with Default of cors(*)
 app.use(cors(
-      origin:["https://mern-app-frontend-xi.vercel.app/"],
+      origin:["https://mern-app-frontend-xi.vercel.app"],
       methods:["POST","GET","UPDATE","DELETE"],
       credentials: true,
 
