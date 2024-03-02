@@ -13,7 +13,7 @@ app.use(express.json());
 // Option 1: Allow All Origins with Default of cors(*)
 app.use(cors(
       origin:["https://mern-app-frontend-xi.vercel.app"],
-      methods:["POST","GET","UPDATE","DELETE"],
+      methods:["POST","GET"],
       credentials: true,
 
 
